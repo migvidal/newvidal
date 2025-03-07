@@ -33,7 +33,7 @@
         {{ if .HasChildren }}
         <li class="nav-item nav-dropdown group relative">
             <span
-              class="nav-link {{ range .Children }}
+              class="nav-link rounded-xl {{ range .Children }}
                 {{ $childURL := .URL | absLangURL }}
                 {{ $active := eq $childURL $pageURL }}
                 {{ if $active }}active{{ end }}
@@ -54,7 +54,7 @@
               <a
                 id="{{ .Name }}"
                 class="nav-dropdown-link {{ if $active }}
-                      active
+                      active underline
                     {{- end -}}"
                 {{ if findRE `^http` .URL }}
                 target="_blank" rel="noopener"
@@ -78,7 +78,7 @@
           <!--suppress XmlDuplicatedId -->
           <a
             id="{{ .Name }}"
-            class="nav-link {{ if $active }}active{{- end -}}"
+            class="nav-link rounded-xl {{ if $active }}active underline{{- end -}}"
             {{ if findRE `^http` .URL }}
             target="_blank" rel="noopener"
             {{ end }}
