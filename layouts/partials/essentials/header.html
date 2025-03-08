@@ -1,5 +1,13 @@
 <header
   class="container flex header {{ if site.Params.navbar_fixed }}sticky top-0{{ end }} z-30 ">
+  <script type="text/hyperscript">
+    behavior BoxHighlight
+      on mouseenter
+        add .box-emphasis to me
+      on mouseout
+        remove .box-emphasis from me
+    end
+  </script>
   <div class="w-[17rem]"></div>
   <nav class="navbar w-full">
     <!-- navbar toggler -->
@@ -32,11 +40,12 @@
       {{ if .HasChildren }}
       <li class="nav-item nav-dropdown group relative">
             <span
-              class="nav-link rounded-xl mx-1 px-4 py-2 {{ range .Children }}
+                class="nav-link rounded-xl mx-1 px-4 py-2 {{ range .Children }}
                 {{ $childURL := .URL | absLangURL }}
                 {{ $active := eq $childURL $pageURL }}
                 {{ if $active }}active{{ end }}
-              {{ end }} inline-flex items-center">
+              {{ end }} inline-flex items-center"
+              data-script="install BoxHighlight">
               {{ .Name }}
               <svg class="h-4 w-4 fill-current" viewBox="0 0 20 20">
                 <path
@@ -78,6 +87,7 @@
         <a
           id="{{ .Name }}"
           class="nav-link rounded-xl mx-1 px-4 py-2 {{ if $active }}active underline{{- end -}}"
+          data-script="install BoxHighlight"
           {{ if findRE `^http` .URL }}
           target="_blank" rel="noopener"
           {{ end }}
