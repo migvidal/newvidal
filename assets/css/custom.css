@@ -1,1 +1,4 @@
 /* Add your own custom styles here */
+.header {
+  @apply bg-body dark:bg-darkmode-body py-2;
+}
