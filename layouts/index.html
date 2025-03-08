@@ -8,18 +8,18 @@
         <a
           href="/"
           data-script="
-  on mouseover
+  on mouseenter
+  transition #main-content's opacity to 0.8 over 20ms
   {{ range site.Menus.main }}
     add .bg-black .text-white .dark:bg-white .dark:text-black .shadow to #{{.Name}}
-    then transition #{{.Name}}'s scale to 1.1 over 50ms
-    then
+    transition #{{.Name}}'s scale to 1.1 over 20ms
   {{ end }}
   end
-  on mouseout
+  on mouseleave
+  transition #main-content's opacity to initial over 20ms
   {{ range site.Menus.main }}
     remove .bg-black .text-white .dark:bg-white .dark:text-black .shadow from #{{.Name}}
-    then transition #{{.Name}}'s scale to initial over 50ms
-    then
+    transition #{{.Name}}'s scale to initial over 20ms
   {{ end }}
   end
 "
@@ -37,7 +37,7 @@
 
     </div>
     <!-- END Logo -->
-    <div>
+    <div id="main-content">
       <p>Soy Miguel Vidal. Desarrollador de software, aficionado al diseño y la tecnología</p>
       <p>Soy Miguel Vidal. Desarrollador de software, aficionado al diseño y la tecnología</p>
       <p>Soy Miguel Vidal. Desarrollador de software, aficionado al diseño y la tecnología</p>
