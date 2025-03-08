@@ -2,3 +2,11 @@
 .header {
   @apply bg-body dark:bg-darkmode-body py-2;
 }
+
+.social-icon {
+  @apply bg-white text-primary dark:bg-primary dark:text-white;
+}
+
+.box-emphasis {
+  @apply bg-black text-white dark:bg-white dark:text-black;
+}
