@@ -61,11 +61,14 @@ Actualmente trabajando en Vexiza.
 Este es mi currículum:
 
 ## Mis conocimientos
-He trabajado el SDK de Android tanto con Java-XML, como con Kotlin-Compose. Por ello, sé manejarme tanto en proyectos modernos como legacy
 
-Poseo experiencia extensa con bibliotecas de GIS y mapas
+- He trabajado el SDK de Android tanto con Java y XML, como con Kotlin y Compose.
 
-He aplicado arquitectura Clean, MVVM y seguido las mejores prácticas de diseño de software
+Por ello, sé manejarme en proyectos modernos así como _legacy_
+
+- Poseo experiencia extensa con bibliotecas de GIS y mapas
+
+- He aplicado arquitectura Clean, MVVM y seguido las mejores prácticas de diseño de software
 
 En mi trabajo también he tocado Back-end en .NET
 
