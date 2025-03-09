@@ -4,7 +4,7 @@
 }
 
 .social-icon {
-  @apply bg-white text-primary dark:bg-primary dark:text-white;
+  @apply bg-white text-primary dark:bg-primary dark:text-white rounded-full;
 }
 
 .box-emphasis {

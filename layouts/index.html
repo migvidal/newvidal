@@ -11,19 +11,25 @@
               href="/"
               data-script="
   on mouseenter
-  transition #main-content's opacity to 0.4 over 200ms
+  transition #main-content's opacity to 0.4 over 100ms
   {{ range site.Menus.main }}
     add .box-emphasis to #{{.Name}}
-    add .box-emphasis to .social-icon
-    transition #{{.Name}}'s scale to 1.1 over 200ms
+    transition #{{.Name}}'s scale to 1.1 over 100ms
+  {{ end }}
+  {{ range site.Data.social.main }}
+    add .box-emphasis to #{{.name}}
+    transition #{{.name}}'s scale to 1.1 over 100ms
   {{ end }}
   end
   on mouseleave
-  transition #main-content's opacity to initial over 200ms
+  transition #main-content's opacity to initial over 100ms
   {{ range site.Menus.main }}
     remove .box-emphasis from #{{.Name}}
-    remove .box-emphasis from .social-icon
-    transition #{{.Name}}'s scale to initial over 200ms
+    transition #{{.Name}}'s scale to initial over 100ms
+  {{ end }}
+  {{ range site.Data.social.main }}
+    remove .box-emphasis from #{{.name}}
+    transition #{{.name}}'s scale to initial over 100ms
   {{ end }}
   end
 "
@@ -45,11 +51,13 @@
             {{ range site.Data.social.main }}
             <li>
               <a
+                id="{{ .name }}"
                 target="_blank"
                 aria-label="{{ .name }}"
                 rel="nofollow noopener"
                 href="{{ .link | safeURL }}"
-                class="social-icon">
+                class="social-icon"
+                data-script="install BoxHighlight">
                 <i class="{{ .icon }}"></i>
               </a>
             </li>
