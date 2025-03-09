@@ -51,3 +51,22 @@ features:
       label: ""
       link: ""
 ---
+## Soy Miguel Vidal,
+desarrollador de software, aficionado al diseño y la tecnología.
+
+Especializado en desarrollo Android con 2 años de experiencia.
+
+Actualmente trabajando en Vexiza.
+
+Este es mi currículum:
+
+## Mis conocimientos
+He trabajado el SDK de Android tanto con Java-XML, como con Kotlin-Compose. Por ello, sé manejarme tanto en proyectos modernos como legacy
+
+Poseo experiencia extensa con bibliotecas de GIS y mapas
+
+He aplicado arquitectura Clean, MVVM y seguido las mejores prácticas de diseño de software
+
+En mi trabajo también he tocado Back-end en .NET
+
+He realizado proyectos web personales con HUGO y Next, y Tailwind para estilos
