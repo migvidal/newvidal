@@ -28,3 +28,7 @@ h2 {
 .box-emphasis {
   @apply bg-black text-white dark:bg-white dark:text-black;
 }
+
+.content img {
+  @apply block w-md shadow-lg hover:shadow-2xl
+}
