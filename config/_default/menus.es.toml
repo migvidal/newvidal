@@ -1,10 +1,10 @@
 # main menu
 [[main]]
-name = "Skills"
+name = "Conocimientos"
 url = "#skills"
 weight = 1
 
 [[main]]
-name = "Projects"
+name = "Proyectos"
 url = "#projects"
 weight = 2
