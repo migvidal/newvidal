@@ -51,33 +51,33 @@ features:
       label: ""
       link: ""
 ---
-## I am Miguel Vidal,
-software developer, design and technology lover.
+## Soy Miguel Vidal,
+desarrollador de software, aficionado al diseño y la tecnología.
 
-Specialized in Android development with 2 years of experience.
+Especializado en desarrollo Android con 2 años de experiencia.
 
-Currently working in [Vexiza](https://vexiza.com/).
+Actualmente trabajando en [Vexiza](https://vexiza.com/).
 
-[My curriculum](/CV-english-pdf.pdf)
+[Mi currículum](/CV-pdf.pdf)
 
-## My skills
+## Mis conocimientos
 
-- I have worked with the Android SDK both in Java and XML, as well as in Kotlin and Compose. Because of this, I can handle both modern and legacy projects.
+- He trabajado el SDK de Android tanto con Java y XML, como con Kotlin y Compose. Por ello, sé manejarme en proyectos modernos así como _legacy_.
 
-- I have extensive experience with GIS and maps libraries.
+- Poseo experiencia extensa con bibliotecas de GIS y mapas.
 
-- I have applied Clean architecture, MVVM and followed the best software design practices.
+- He aplicado arquitectura Clean, MVVM y seguido las mejores prácticas de diseño de software.
 
-- In my job I have also worked in back-end in .NET.
+- En mi trabajo también he tocado Back-end en .NET.
 
-- I have made personal web projects with HUGO and Next.
+- He realizado proyectos web personales con HUGO y Next, y Tailwind para estilos.
 
-## My projects
+## Mis proyectos
 ##### [Web de Alba Vidal](https://github.com/migvidal/viwiki2)
-Portfolio website for Alba Vidal, audiovisual translator. [Website](https://albavidal.com)
+Web portfolio de Alba Vidal, traductora audiovisual. [Ver online](https://albavidal.com)
 [![Web de Alba Vidal](/images/Alba-web.png)](https://github.com/migvidal/viwiki2)
 
 
 ##### [ViWiki](https://github.com/migvidal/viwiki2)
-Simple and elegant Wikipedia client for Android. Proof of concept.
+Cliente Android simple y elegante de Wikipedia. Por ahora, un POC.
 [![ViWiki](/images/viwiki.png)](https://github.com/migvidal/viwiki2)
