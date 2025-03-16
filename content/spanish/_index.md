@@ -1,3 +1,30 @@
+---
+experience:
+  title: Mi experiencia
+  jobs:
+    - start_date: sept. 2024
+      end_date: actualidad
+      title: Programador
+      company: Vexiza
+      description: Desarrollo de apps móviles (Android) y back-end.
+      image: images/pages/vexiza.jpeg
+    - start_date: oct. 2022
+      end_date: oct. 2023
+      title: Desarrollador Android - investigador
+      company: AIR Institute
+      description: Desarrollo de aplicaciones Android innovadoras en un equipo reducido.
+    - start_date: feb.
+      end_date: mayo 2022
+      title: Desarrollador web y Android
+      company: HP SCDS
+      description: Recibí formación en Android, Java y Spring Boot.
+    - start_date: abr.
+      end_date:  jul. 2021
+      title: Desarrollador web
+      company: Fiebre
+      description: Trabajé en webs con Shopify y Wordpress. Creé un script JS para superponer imágenes, reduciendo el trabajo de los diseñadores.
+---
+
 ## Soy Miguel Vidal,
 desarrollador de software, aficionado al diseño y la tecnología.
 

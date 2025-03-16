@@ -1,5 +1,4 @@
 {{ define "main" }}
-<!-- Banner -->
 <section class="section pt-14">
   <div class="container flex flex-nowrap flex-col md:flex-row">
     <div class="w-64 z-90">
@@ -71,8 +70,110 @@
       <article class="content max-w-xl">
         {{ .Content }}
       </article>
+      <!-- Experience -->
+      {{ with .Params.experience }}
+      <article id="experience" class="relative my-4 max-w-xl">
+        <h2
+          class="text-3xl mb-[0.3em] font-bold capitalize dark:text-gray-50 sm:text-4xl">
+          {{ .title }}
+        </h2>
+
+        <div>
+          <!-- Latest experience -->
+          {{ range $index, $job := .jobs }}
+          {{ if eq $index 0 }}
+          <div class="relative">
+            <div aria-hidden="true"
+                 class="hidden sm:block lg:absolute lg:inset-y-0">
+              <svg class="absolute -ml-3 top-8 left-1/2" width="404"
+                   height="392" fill="none" viewBox="0 0 404 392">
+                <defs>
+                  <pattern id="02f20b47-fd69-4224-a62a-4c9de5c763f7" x="0" y="0"
+                           width="20" height="20"
+                           patternUnits="userSpaceOnUse">
+                    <rect x="0" y="0" width="4" height="4"
+                          class="text-gray-200 dark:text-gray-900/60"
+                          fill="currentColor"/>
+                  </pattern>
+                </defs>
+                <rect width="404" height="392"
+                      fill="url(#02f20b47-fd69-4224-a62a-4c9de5c763f7)"/>
+              </svg>
+            </div>
+            <div class="relative max-w-md sm:max-w-3xl lg:max-w-none">
+              <div class="relative pt-8 overflow-hidden shadow-xl rounded-2xl">
+                <div class="absolute inset-0 bg-indigo-300 mix-blend-multiply"></div>
+                <div class="absolute inset-0 bg-gradient-to-t from-indigo-600">
+                </div>
+
+                <div class="relative px-8 max-w-md">
+                  <ol class="relative border-l-8 border-white">
+                    <li class="ml-4">
+                      <div
+                        class="absolute w-6 h-6 bg-white rounded-full -mt-0.5 -left-4 border border-white">
+                      </div>
+                      <div class="mt-8 pb-8">
+                        <div class="relative text-lg font-medium text-white md:flex-grow">
+                          <time
+                            class="block pb-2 text-sm font-normal text-white dark:text-opacity-50 text-opacity-100">
+                            {{ .start_date }} - {{ .end_date }}
+                          </time>
+                          <h3 class="relative font-bold text-2xl pb-2 text-white">
+                            {{ .title }} · {{ .company }}
+                          </h3>
+                          <p class="font-normal text-white text-opacity-80">
+                            {{ .description }}
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+          {{ end }}
+          {{ end }}
+          <!-- /Latest experience -->
+
+          <!-- Past experience -->
+          <div class="relative max-w-md sm:max-w-3xl lg:max-w-none">
+            <div class="relative px-8 max-w-md">
+              <div class="space-y-6 text-gray-900 dark:text-white">
+                <!-- Timeline -->
+                <ol class="relative pt-9 border-l border-gray-200 dark:border-gray-700">
+                  {{ range $index, $job := .jobs }}
+                  {{ if eq $index 0 }}
+                  {{ continue }}
+                  {{ end }}
+                  <!-- List item -->
+                  <li class="mb-4 ml-4">
+                    <div
+                      class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700 hover:bg-white dark:hover:bg-white">
+                    </div>
+                    <time
+                      class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                      {{ .start_date }} - {{ .end_date }}
+                    </time>
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+                      {{ .title }} · {{ .company }}
+                    </h3>
+                    <p class="text-base font-normal text-gray-500 dark:text-gray-400">
+                      {{ .description }}</p>
+                  </li>
+                  <!-- /List item -->
+                  {{ end }}
+                </ol>
+                <!-- /Timeline -->
+              </div>
+            </div>
+          </div>
+          <!-- /Past experience -->
+        </div>
+      </article>
+      {{ end }}
+      <!-- END Experience -->
     </div>
   </div>
 </section>
-<!-- /Banner -->
 {{ end }}
