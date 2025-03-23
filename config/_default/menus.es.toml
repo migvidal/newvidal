@@ -5,6 +5,11 @@ url = "#skills"
 weight = 1
 
 [[main]]
+name = "Experiencia"
+url = "#experience"
+weight = 2
+
+[[main]]
 name = "Proyectos"
 url = "#projects"
-weight = 2
+weight = 3
