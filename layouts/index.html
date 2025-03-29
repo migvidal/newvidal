@@ -4,7 +4,7 @@
     <div class="w-full md:w-64 z-90">
       <!-- Logo -->
       <div class="sticky top-0">
-        <div class="max-w-full size-100 md:size-64">
+        <div class="max-w-full size-100 md:size-64 mx-auto">
           <hyper-card class="max-w-full size-100 md:size-64 flex rounded-2xl">
             <a
               href="/"
@@ -45,8 +45,8 @@
           </hyper-card>
         </div>
         <div class="spacer size-4"></div>
-        <div class="lg:col-3 mb-8 text-center lg:mb-0 lg:mt-0 lg:text-right">
-          <ul class="social-icons flex">
+        <div class="mb-8 text-center lg:mb-0 lg:mt-0 lg:text-right">
+          <ul class="social-icons flex justify-center">
             {{ range site.Data.social.main }}
             <li>
               <a
