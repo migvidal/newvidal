@@ -1,20 +1,13 @@
 @font-face {
-  font-family: "EduQLDBeginner";
-  src: url("/fonts/EduQLDBeginner-VariableFont_wght.ttf") format("truetype-variations");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "nunito";
-  src: url("/fonts/Nunito-VariableFont_wght.ttf") format("truetype-variations");
+  font-family: "tektur";
+  src: url("/fonts/Tektur-VariableFont_wdth,wght.ttf") format("truetype-variations");
   font-weight: normal;
   font-style: normal;
 }
 
 h2 {
-  font-family: "nunito", sans-serif;
-  font-variation-settings: "wght" 600;
+  font-family: "tektur", sans-serif;
+  font-variation-settings: "wght" 100;
 }
 
 .header {
