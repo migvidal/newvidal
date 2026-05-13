@@ -29,7 +29,7 @@ experience:
 
 software developer, design and technology lover.
 
-Specialized in Android development with 2 years of experience.
+Specialized in Android development with 3 years of experience.
 
 Currently working in [Vexiza](https://vexiza.com/).
 
@@ -50,7 +50,7 @@ Currently working in [Vexiza](https://vexiza.com/).
 
 ## My projects {#projects}
 
-##### [Web de Alba Vidal](https://github.com/migvidal/viwiki2)
+##### [Alba Vidal's website](https://github.com/migvidal/viwiki2)
 
 Portfolio website for Alba Vidal, audiovisual translator. [Website](https://albavidal.com)
 [![Web de Alba Vidal](/images/Alba-web.png)](https://github.com/migvidal/viwiki2)

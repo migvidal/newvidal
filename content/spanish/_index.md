@@ -28,7 +28,7 @@ experience:
 ## Soy Miguel Vidal,
 desarrollador de software, aficionado al diseño y la tecnología.
 
-Especializado en desarrollo Android con 2 años de experiencia.
+Especializado en desarrollo Android con 3 años de experiencia.
 
 Actualmente trabajando en [Vexiza](https://vexiza.com/).
 
@@ -42,9 +42,9 @@ Actualmente trabajando en [Vexiza](https://vexiza.com/).
 
 - He aplicado arquitectura Clean, MVVM y seguido las mejores prácticas de diseño de software.
 
-- En mi trabajo también he tocado Back-end en .NET.
+- También he trabajado en Back-end con .NET.
 
-- He realizado proyectos web personales con HUGO y Next, y Tailwind para estilos.
+- He realizado proyectos web personales con HUGO y NextJS.
 
 ## Mis proyectos {#projects}
 ##### [Web de Alba Vidal](https://github.com/migvidal/viwiki2)
